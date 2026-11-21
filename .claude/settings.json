@@ -4,6 +4,8 @@
     "deny": [
       "Read(./.env)",
       "Edit(./.env)",
+      "Read(./.env.local)",
+      "Edit(./.env.local)",
       "Bash(git push origin main)",
       "Bash(git push origin main *)",
       "Bash(git push --force *)",
