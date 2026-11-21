@@ -22,7 +22,7 @@ npm start
 起動したときに次の2行が出ることがありますが、問題ありません。
 
 - `.env not found. Continuing without it.`（`.env` をまだ作っていない。AI 機能はモックで動く）
-- `ExperimentalWarning: SQLite is an experimental feature ...`（Node.js 標準の SQLite が「試験中」の扱いであるという知らせ）
+- `ExperimentalWarning: SQLite is an experimental feature ...`（Node.js 標準の SQLite がまだ実験的な機能だという警告）
 
 ## テスト
 
@@ -54,7 +54,7 @@ node --test
 |---|---|---|
 | `features/` | 機能ごとに1ファイル（画面と API）。新しい機能はここにファイルを足す | 機能の担当者 |
 | `shared/nav.js` | 画面の上のナビ。機能を足したらリンクを1行足す | 全員（コンフリクトが起きやすい） |
-| `lib/` | 全員が使う道具（DB、HTML、HTTP、Gemini の呼び出し） | 直すときはチームに一言 |
+| `lib/` | 全員が使う共通の処理（DB、HTML、HTTP、Gemini の呼び出し） | 直すときはチームに一言 |
 | `public/style.css` | 見た目 | 誰でも |
 | `test/` | `node --test` で動くテスト | 機能の担当者 |
 | `server.js` | `features/` を読み込んで動かす入り口。ふだんは触らない | |
@@ -89,7 +89,7 @@ node --test
 ## 機能の足し方
 
 1. ブランチを切る（例: 「`add-deadline` というブランチを切って」と Claude に頼む）
-2. `features/` に新しいファイルを作り、`routes` を書き出す（`features/item-detail.js` が見本）
+2. `features/` に新しいファイルを作り、`routes` を書き出す（`features/item-detail.js` が参考になる）
 3. `shared/nav.js` にリンクを1行足す
 4. 手で確かめ、テストを足し、PR を出す（「PR を書いて」）
 
