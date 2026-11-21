@@ -104,3 +104,5 @@ Do not copy the code (`features/`, `lib/`, `server.js`, and so on), `package.jso
 2. Create a new file in `features/` that exports `routes` (see `features/item-detail.js`)
 3. Add one link to `shared/nav.js`
 4. Check it by hand, add a test, and open a PR ("Write a PR")
+
+If you can't decide on your first feature, start with edit or delete. The starter only has list, detail, and add, so every theme needs them. Both add a button to the detail screen, so they also give you practice resolving a conflict on the same file. Delete is good practice for listing what to check, too: whether to ask for confirmation, where to go after deleting, and what happens when you delete an item that no longer exists.
