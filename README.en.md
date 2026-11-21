@@ -74,7 +74,7 @@ Your team is free to choose any theme, with three conditions:
 2. It is something you want to use or build
 3. It is small enough that each person can add one feature in two hours
 
-If you can't decide, pick one of these and adapt it. Each one starts by simply replacing "item". The feature split is just an example; one of the features should be an AI feature.
+If you can't decide, pick one of these and adapt it. Each one starts by simply replacing "item". The feature split is just an example. Include at least one AI feature (more are fine).
 
 | Theme | What an item is | One feature per person (example) |
 |---|---|---|
