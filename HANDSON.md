@@ -185,10 +185,12 @@ gh は、ターミナルから GitHub を操作するツールです。GitHub �
 
 https://github.com/cli/cli/releases/latest を開き、ページの下の Assets から、自分の OS のインストーラを選んで入れます。
 
-| OS | ファイル |
+| OS | Assets に表示される名前 |
 | --- | --- |
-| Mac | `gh_（バージョン）_macOS_universal.pkg` |
-| Windows | `gh_（バージョン）_windows_amd64.msi`（ARM の Windows は `_windows_arm64.msi`） |
+| Mac | **GitHub CLI 2.105.0 macOS universal**（`macOS amd64` や `macOS arm64` ではなく、universal のほう） |
+| Windows | **GitHub CLI 2.105.0 windows amd64 installer**（ARM の Windows は `windows arm64 installer`。`installer` が付いているほう） |
+
+数字（2.105.0）は gh のバージョンで、当日は変わっていることがあります。
 
 入れたら、ターミナルを閉じて開き直し、Claude アプリも開き直します（開き直さないと、入れたばかりの gh が見つかりません）。
 
