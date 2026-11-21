@@ -181,7 +181,7 @@ Replace the contents of CLAUDE.md with the contents of CLAUDE.en.md, and delete 
 
 **① gh（GitHub CLI）を入れる**
 
-gh は、ターミナルから GitHub を操作するツールです。gh で GitHub にログインしておくと、`git push` のときのログインもまとめて済みます。Claude が PR を作るときにも使います。
+gh は、ターミナルから GitHub を操作するツールです。GitHub に push するには、GitHub へのログインが要ります。gh で一度ログインしておけば、そのあとの push はログインし直さずに通ります。Claude が PR を作るときにも gh を使います。
 
 https://github.com/cli/cli/releases/latest を開き、ページの下の Assets から、自分の OS のインストーラを選んで入れます。
 
