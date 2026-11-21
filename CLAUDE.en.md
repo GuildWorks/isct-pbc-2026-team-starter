@@ -25,7 +25,8 @@ When you change this file, have the team review it in a PR.
 
 - Node.js 24 or later. Runs on the built-in `node:http` and `node:sqlite` only. No dependency packages.
 - The server builds the HTML for each screen. Styles are in `public/style.css`.
-- Data is stored in a local SQLite file (`data.db`).
+- Data is stored in a local SQLite file (`data.db`). Each person's `data.db` stays on their own machine and is never committed.
+- When you change the columns of a table, this is a practice app, so a person deletes `data.db` by hand and restarts the server (the sample items come back). Claude never deletes `data.db`.
 - AI calls go to Gemini through `lib/gemini.js`. Without a key it returns mock responses.
 - Pass any text shown on screen through `escapeHtml` in `lib/html.js`.
 
@@ -36,16 +37,20 @@ When you change this file, have the team review it in a PR.
 - The file everyone shares is `shared/nav.js` (the navigation at the top). Add one link when you add a feature.
 - `lib/` holds tools everyone uses.
 
-## How to check this app (team writes this)
+## How to check this app
 
-<!-- The command that runs the tests, and what a person checks in the browser after a change -->
-
-- Command to run the tests:
-- What a person checks in the browser:
+- Command to run the tests: `node --test` (same as `npm test`). Tests live under `test/`.
+- What a person checks in the browser (team writes this):
+  <!-- After a change, what a person operates and looks at in the browser with their own hands. Example: pressing Add with an empty name does not add an item and shows a warning -->
 
 ---
 
 # Development rules (independent of theme and technology; can be copied into your camp repository as is)
+
+## Before building
+
+- Before implementing, explain what you will build and how, and wait for the person's approval. Do not change files until they approve.
+- Build one feature at a time.
 
 ## Branches and PRs
 

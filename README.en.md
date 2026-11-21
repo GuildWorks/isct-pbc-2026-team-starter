@@ -72,7 +72,7 @@ Your team is free to choose any theme, with three conditions:
 
 1. It is different from what you will build in the development phase (the camp)
 2. It is something you want to use or build
-3. It is small enough that each person can add one feature in two hours
+3. It is small enough that each person can add one feature in about 50 minutes
 
 If you can't decide, pick one of these and adapt it. Each one starts by simply replacing "item". The feature split is just an example. Include at least one AI feature (more are fine).
 
@@ -107,4 +107,4 @@ Do not copy the code (`features/`, `lib/`, `server.js`, and so on), `package.jso
 3. Add one link to `shared/nav.js`
 4. Check it by hand, add a test, and open a PR ("Write a PR")
 
-If you can't decide on your first feature, start with edit or delete. The starter only has list, detail, and add, so every theme needs them. Both add a button to the detail screen, so they also give you practice resolving a conflict on the same file. Delete is good practice for listing what to check, too: whether to ask for confirmation, where to go after deleting, and what happens when you delete an item that no longer exists.
+If you can't decide on your first feature, start with edit. The starter only has list, detail, and add, so every theme needs it. Everyone builds delete once in the afternoon "advanced" part of Learning Phase #4 (practice in listing what to check: whether to ask for confirmation, where to go after deleting, and what happens when you delete an item that no longer exists). Your team repository is created fresh from the starter, so adding delete again as a team is fine too. Edit and delete both add a button to the detail screen, so they also give you practice resolving a conflict on the same file.
