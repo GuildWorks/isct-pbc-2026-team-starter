@@ -5,6 +5,11 @@
 
 講義の当日はスライドと一緒に使います。あとから1人で読み直すときは、上から順に進めてください。
 
+手順書の中の囲みは2種類あります。
+
+- 文章の囲み（日本語や英語の文）: コード画面で Claude に送る頼み方です。コピーしてプロンプト欄に貼り、（ ）の中は自分のものに書き換えて送ります
+- `git`、`npm`、`gh`、`node`、`cd`、`cp`、`rm` などで始まる1行: 自分でターミナル（Mac: ターミナル、Windows: PowerShell）に打つコマンドです
+
 - 使うもの: Claude デスクトップアプリのコード画面（Code タブ）、VS Code、Git、GitHub、Node.js 24 以上、Gemini（Google の LLM）の無料枠
 - 権限モード: Auto（選べない人は Accept edits）
 - モデル: Sonnet 5.5。演習の計画を Plan モードで相談するときだけ Opus にしてよい（終わったら Sonnet に戻す）
@@ -159,7 +164,7 @@ Claude アプリのコード画面で `lp4-practice` フォルダを開きます
 - 利用枠の残りは、コード画面の右下の輪で見られます。5時間の枠は、使い始めた時刻から5時間たつと戻ります（10:20 に使い始めたら 15:20 ごろ）。いつ戻るかも、右下の輪で見られます
 - スターターの CLAUDE.md には「実装の前に、何をどう作るかを説明し、人の了承を待つ」と書いてあります。Claude が説明して止まったら、読んでよければ「進めてください」と返します
 
-英語で進める人は、ここで CLAUDE.md を英語に替えておきます（Claude Code が自動で読むのは `CLAUDE.md` だけです）。
+英語で進める人は、ここで CLAUDE.md を英語に替えておきます（Claude Code が自動で読むのは `CLAUDE.md` だけです）。コード画面で、Claude に次のように頼みます。
 
 ```
 Replace the contents of CLAUDE.md with the contents of CLAUDE.en.md, and delete CLAUDE.en.md.
