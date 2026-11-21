@@ -1,0 +1,13 @@
+{
+  "name": "isct-pbc-2026-team-starter",
+  "private": true,
+  "type": "module",
+  "description": "チームで Claude Code と開発するためのスターター（依存パッケージなし）",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.js",
+    "test": "node --test"
+  }
+}

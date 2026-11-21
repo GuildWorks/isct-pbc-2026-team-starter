@@ -1,0 +1,82 @@
+/* 見た目。チームの題材に合わせて自由に変えてよい */
+
+:root {
+  --text: #1f2933;
+  --muted: #6b7280;
+  --accent: #1f4e8c;
+  --bg: #f7f7f5;
+  --card: #ffffff;
+  --line: #e2e2dc;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.7;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 24px;
+  padding: 12px 16px;
+  background: var(--card);
+  border-bottom: 1px solid var(--line);
+}
+
+.app-name { margin: 0; font-weight: bold; }
+
+nav { display: flex; flex-wrap: wrap; gap: 16px; }
+nav a { color: var(--accent); text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+
+main { max-width: 720px; margin: 0 auto; padding: 16px; }
+
+h1 { font-size: 1.5rem; }
+
+.items { list-style: none; padding: 0; }
+.items li {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.meta { color: var(--muted); font-size: 0.875rem; }
+.body { white-space: pre-wrap; }
+.note { color: var(--muted); font-size: 0.875rem; }
+
+form { display: grid; gap: 12px; }
+label { display: grid; gap: 4px; }
+input, textarea { font: inherit; padding: 8px; border: 1px solid var(--line); border-radius: 6px; }
+
+button {
+  font: inherit;
+  padding: 8px 16px;
+  color: #fff;
+  background: var(--accent);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  justify-self: start;
+}
+button:disabled { opacity: 0.6; cursor: wait; }
+
+.errors { color: #b42318; }
+
+.ai-result {
+  white-space: pre-wrap;
+  min-height: 1.7em;
+  padding: 12px 16px;
+  background: var(--card);
+  border-left: 4px solid var(--accent);
+}

@@ -1,0 +1,12 @@
+# 秘密の鍵（各自の .env に各自のキーを置く。コミットしない）
+.env
+.env.*
+!.env.example
+
+# データ（各自の手元の SQLite）
+data.db
+data.db-*
+
+node_modules/
+.DS_Store
+.claude/settings.local.json
