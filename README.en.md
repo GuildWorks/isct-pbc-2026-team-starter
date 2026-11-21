@@ -84,13 +84,15 @@ If you can't decide, pick one of these and adapt it. Each one starts by simply r
 | Shared list of recommended works (films, anime, games) | A work (title, type, comment) | Star rating / filter by type / "want to watch" mark and count / AI drafts a spoiler-free intro |
 | Lab question box | A question (content, for whom, answer) | Answer field / filter answered or not / "I want to know too" count / AI checks for similar questions |
 
-## What to copy into your camp repository
+## Getting ready for team development at the camp (optional)
 
-At the end of the exercise, you create a new private repository for the camp (the "base"). From this practice repository, have Claude copy only the parts that do not depend on your theme or technology.
+If you bring the way of working you practiced in Learning Phase #4 into your team's camp repository, it is easier to start at the camp. You do not create that repository during the #4 session. Whether and when to do this is up to your team. Teams that have already started development do not need it.
+
+If you do it, have Claude copy only the parts of this practice repository that do not depend on your theme or technology.
 
 | What | How |
 |---|---|
-| The "Development rules" part of `CLAUDE.md` (or `CLAUDE.en.md`) | Copy as is. Keep only the headings of the "What this app is" part and leave them blank (you fill them in on 12/12) |
+| The "Development rules" part of `CLAUDE.md` (or `CLAUDE.en.md`) | Copy as is. Keep only the headings of the "What this app is" part and leave them blank (fill them in after the whole team decides what to build on 12/12) |
 | `.claude/settings.json` | Copy as is. Change the two `data.db` lines to the data file you will use at the camp (delete them if there is none) |
 | `.claude/skills/write-pr/` | Copy as is |
 | The `.env` lines of `.gitignore` | Copy only the lines that keep `.env` out of commits (add lines for your technology once you choose it) |

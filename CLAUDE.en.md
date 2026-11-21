@@ -5,7 +5,7 @@
 This file makes everyone's Claude Code on the team follow the same rules. It has two parts:
 
 - "What this app is": rewrite it for your theme and technology. Fill in the "(team writes this)" sections before you start.
-- "Development rules": independent of the theme and technology. Copy it as is into your camp repository (the base).
+- "Development rules": independent of the theme and technology. You can also copy it as is into your team's camp repository (your team decides whether to).
 
 When you change this file, have the team review it in a PR.
 
@@ -45,7 +45,7 @@ When you change this file, have the team review it in a PR.
 
 ---
 
-# Development rules (independent of theme and technology; copy into the base as is)
+# Development rules (independent of theme and technology; can be copied into your camp repository as is)
 
 ## Branches and PRs
 
