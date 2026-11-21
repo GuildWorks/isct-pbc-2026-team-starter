@@ -1,5 +1,7 @@
 # isct-pbc-2026-team-starter
 
+[English](README.en.md)
+
 東京科学大学 プログラミングブートキャンプ 2026 のラーニングフェーズ4回目で使う、チーム開発のスターターです。
 題材を持たない「項目（item）」の一覧・詳細・追加と、AI 機能の例が1つだけ入っています。チームの題材に置き換えて使います。
 
@@ -54,7 +56,7 @@ node --test
 | `public/style.css` | 見た目 | 誰でも |
 | `test/` | `node --test` で動くテスト | 機能の担当者 |
 | `server.js` | `features/` を読み込んで動かす入り口。ふだんは触らない | |
-| `CLAUDE.md` | チームの約束ごと。空欄をチームで埋める | 全員（PR で） |
+| `CLAUDE.md` | チームの約束ごと。空欄をチームで埋める。英語で進めるチームは `CLAUDE.en.md` の中身に置き換える（Claude Code が自動で読むのは `CLAUDE.md` だけ） | 全員（PR で） |
 | `.claude/settings.json` | Claude Code に触らせないもの（`.env` の読み取り、main への push など） | |
 | `.claude/skills/write-pr/` | 「PR を書いて」と頼んだときのやり方 | |
 
@@ -82,7 +84,7 @@ node --test
 
 | 写すもの | 写し方 |
 |---|---|
-| `CLAUDE.md` の「開発ルール」の部分 | そのまま写す。「何のアプリか」の部分は見出しだけ残し、中は空欄にする（12/12 に埋める） |
+| `CLAUDE.md`（または `CLAUDE.en.md`）の「開発ルール」の部分 | そのまま写す。「何のアプリか」の部分は見出しだけ残し、中は空欄にする（12/12 に埋める） |
 | `.claude/settings.json` | そのまま写す。`data.db` の2行は、合宿で使うデータのファイル名に変える（無ければ消してよい） |
 | `.claude/skills/write-pr/` | そのまま写す |
 | `.gitignore` の `.env` の行 | `.env` をコミットしないための行だけ写す（技術を決めたら、その技術の行を足す） |

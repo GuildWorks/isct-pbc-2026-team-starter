@@ -1,11 +1,13 @@
 ---
 name: write-pr
-description: このブランチの変更から、チームの形で PR（プルリクエスト）の本文を書いて出す。「PR を書いて」「PR を出して」「プルリクを作って」と頼まれたときに使う。
+description: このブランチの変更から、チームの形で PR（プルリクエスト）の本文を書いて出す。「PR を書いて」「PR を出して」「プルリクを作って」と頼まれたときに使う。Writes and opens a pull request in the team's format. Use when asked "Write a PR", "Open a PR", or "Create a pull request".
 ---
 
 # PR を書く
 
 チームの全員が同じ形で PR を書くためのやり方。レビューする人が「何が変わったか」「どう確かめたか」をすぐ読めるようにする。
+
+> English: This skill reads the branch's changes, runs the tests, asks the person how they checked the app by hand, drafts the PR body in the format below, and opens the PR only after the person approves. It never invents checks the person did not do and never takes screenshots itself. If the team's CLAUDE.md is in English, the PR is written in English with the English headings below.
 
 ## 手順
 
@@ -14,7 +16,7 @@ description: このブランチの変更から、チームの形で PR（プル�
    - `git log main..HEAD --oneline` と `git diff main...HEAD` で、このブランチで変えたことを読む。
    - 今いるブランチが `main` なら止める。main で PR は出さない。ブランチを切るかを人に聞く。
 2. テストを動かす
-   - CLAUDE.md の「確かめ方」に書いてあるコマンドでテストを動かし、結果（通ったか、何件か）を控える。落ちたら PR を出さず、人に知らせる。
+   - CLAUDE.md の「このアプリの確かめ方」（英語なら「How to check this app」）に書いてあるコマンドでテストを動かし、結果（通ったか、何件か）を控える。落ちたら PR を出さず、人に知らせる。
    - コマンドが書かれていなければ、推測で動かさず、どう動かすかを人に聞く。
 3. どう確かめたかを人に聞く
    - 「アプリで何を操作して、何を確かめましたか」と人に聞く。人が答えたことだけを書く。
@@ -42,7 +44,28 @@ description: このブランチの変更から、チームの形で PR（プル�
 - （迷ったところ、自信がないところ。無ければ「特になし」）
 ```
 
+## 本文の形（英語）
+
+CLAUDE.md が英語のチームは、こちらの形で英語で書く。
+
+```markdown
+## What changed
+- (1-3 lines on what users can now do. Not a list of file names)
+
+## How I checked
+- Tests: all N passed with (test command)
+- Checked by hand: (what the person said they did and saw. e.g. Entered a name on the add screen, and it appeared at the top of the list)
+
+## Screenshots
+<!-- Paste images the person took while operating the app (drag and drop on GitHub) -->
+
+## What to look at in review
+- (Where you were unsure. "Nothing in particular" if none)
+```
+
 ## 守ること
+
+- PR は CLAUDE.md と同じ言語で書く（日本語なら上の形、英語なら英語の形）。人に話しかけるときは、その人が使っている言語で話す。
 
 - タイトルは「何ができるようになったか」を短く書く（例: 「項目に締め切りを付けられるようにする」）。
 - `.env` の中身、キー、個人情報を本文に書かない。
