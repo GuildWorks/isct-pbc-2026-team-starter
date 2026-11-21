@@ -54,10 +54,10 @@
 | --- | --- | --- |
 | 〜12:00 | [2. AI の組み込み](#2-ai-の組み込み) の途中から | 2 の前半 |
 | 13:00〜14:15 | [3. 応用](#3-応用地図とレール) | 2 |
-| 14:15〜15:30 | [4. チーム開発](#4-チーム開発)（先に [1.2](#12-github-に-push-できるようにする) を済ませる） | 2、3 |
-| 15:30〜 | [5. 演習](#5-演習チームで開発してみよう)（先に [1.2](#12-github-に-push-できるようにする) を済ませる） | 2、3、4 |
+| 14:15〜15:30 | [4. チーム開発](#4-チーム開発)（先に [1.2](#12-github-で-pr-を出す準備をする) を済ませる） | 2、3 |
+| 15:30〜 | [5. 演習](#5-演習チームで開発してみよう)（先に [1.2](#12-github-で-pr-を出す準備をする) を済ませる） | 2、3、4 |
 
-- [1.2 GitHub に push できるようにする](#12-github-に-push-できるようにする) は、午後のチーム開発（14:15〜）が始まるまでに済ませれば大丈夫です
+- [1.2 GitHub で PR を出す準備をする](#12-github-で-pr-を出す準備をする) は、午後のチーム開発（14:15〜）が始まるまでに済ませれば大丈夫です
 - 午後はチームで進めます。チームのメンバーが誰も来ていない人は、メンターに伝えてください。1人になった人どうしで2〜3人の合流チームを組みます（13:00 に仮に組み、14:15 に決めます）
 
 ## 参加していない回がある人へ
@@ -103,7 +103,7 @@
 
 ## 1. セットアップ
 
-10:20〜10:50。スターターを手元で動かし（1.1）、GitHub に push できるようにします（1.2）。上から順に進めてください。
+10:20〜10:50。スターターを手元で動かし（1.1）、GitHub で PR を出す準備をします（1.2）。上から順に進めてください。
 
 ### 1.1 スターターを動かす
 
@@ -175,13 +175,13 @@ Replace the contents of CLAUDE.md with the contents of CLAUDE.en.md, and delete 
 
 2回目・3回目に参加していない人は、[参加していない回がある人へ](#参加していない回がある人へ) も読んでおいてください。
 
-### 1.2 GitHub に push できるようにする
+### 1.2 GitHub で PR を出す準備をする
 
-午後のチーム開発では、GitHub に push して PR を出します。そのための準備です。済んだかどうかは「自分の GitHub のリポジトリ（`lp4-practice`）に1回 push できた」で判断します。
+午後のチーム開発では、GitHub に push して PR を出します。そのために、gh を入れて GitHub にログインし、自分の GitHub にリポジトリを作って push してみます。済んだかどうかは「自分の GitHub のリポジトリ（`lp4-practice`）に1回 push できた」で判断します。
 
 **① gh（GitHub CLI）を入れる**
 
-gh は、ターミナルから GitHub を操作するツールです。Claude が PR を作るときにも使います。
+gh は、ターミナルから GitHub を操作するツールです。gh で GitHub にログインしておくと、`git push` のときのログインもまとめて済みます。Claude が PR を作るときにも使います。
 
 https://github.com/cli/cli/releases/latest を開き、ページの下の Assets から、自分の OS のインストーラを選んで入れます。
 
@@ -836,7 +836,7 @@ Claude の使用量が上限に達したら、Claude なしで進めます。Git
 | `gh: command not found`、「gh が認識されません」 | 入れたあとにターミナルと Claude アプリを開き直したか。Windows はとくに、開き直さないと見つからない |
 | `gh auth login` の途中でブラウザが開かない | 表示された URL（https://github.com/login/device）を自分でブラウザで開き、8桁のコードを入れる |
 | push で `Permission denied` や `403` | GitHub にログインできていない。`gh auth status` を見る。ログインし直したら `gh auth setup-git` を打つ |
-| push で `GH007: Your push would publish a private email address` | git のメールが本当のメールアドレスになっている。[1.2 の ③](#12-github-に-push-できるようにする) で noreply アドレスを設定し、Claude に「直前のコミットの作者を、いまの git config の名前とメールに直してください」と頼んでから push し直す |
+| push で `GH007: Your push would publish a private email address` | git のメールが本当のメールアドレスになっている。[1.2 の ③](#12-github-で-pr-を出す準備をする) で noreply アドレスを設定し、Claude に「直前のコミットの作者を、いまの git config の名前とメールに直してください」と頼んでから push し直す |
 | 自分の GitHub にリポジトリを作るときに、push が `deny` で止まった | 自分でターミナルに `git push -u origin main` を打つ（`lp4-practice` のフォルダで） |
 | clone で `Repository not found` | 招待を承認していない。GitHub のメールか、リポジトリのページで Accept invitation。承認していれば `gh auth status` を見る |
 | 招待が届かない | 代表が入れたユーザー名が合っているか。リポジトリの Settings → Collaborators に「Pending」で出ているか |
