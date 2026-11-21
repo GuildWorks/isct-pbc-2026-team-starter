@@ -315,6 +315,7 @@ features/ai-summary.js を参考にして、項目の説明から AI でタグ�
 Claude が作っているあいだ（数分かかります）に、Gemini のキーを取ります。
 
 1. https://aistudio.google.com/apikey を開き、**個人の Google アカウント**でログインする
+   - 個人の Google アカウントがなければ、https://accounts.google.com/signup で作ります（電話番号の確認などで数分かかります）
 2. 利用規約が出たら読んで同意する
 3. 「API キーを作成」（Create API key）を押す（ボタンの名前は変わることがあります）。プロジェクトを選ぶ画面が出たら、新しく作るか既定のものを選ぶ
 4. できたキーは、まだどこにも貼らずに画面に出したままにしておく（2.4 で使います）
