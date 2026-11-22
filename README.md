@@ -60,7 +60,7 @@ node --test
 | `server.js` | `features/` を読み込んで動かす入り口。ふだんは触らない | |
 | `CLAUDE.md` | チームの約束ごと。空欄をチームで埋める。英語で進めるチームは `CLAUDE.en.md` の中身に置き換える（Claude Code が自動で読むのは `CLAUDE.md` だけ） | 全員（PR で） |
 | `.claude/settings.json` | Claude Code に触らせないもの（`.env` の読み取り、main への push など） | |
-| `.claude/skills/write-pr/` | 「PR を書いて」と頼んだときのやり方 | |
+| `.claude/skills/write-pr/` | 「PR を書いて」と指示したときのやり方 | |
 
 ## テーマの例（迷ったら）
 
@@ -88,7 +88,7 @@ node --test
 
 ## 機能の足し方
 
-1. ブランチを切る（例: 「`add-deadline` というブランチを切って」と Claude に頼む）
+1. ブランチを切る（例: 「`add-deadline` というブランチを切って」と Claude に指示する）
 2. `features/` に新しいファイルを作り、`routes` を書き出す（`features/item-detail.js` が参考になる）
 3. `shared/nav.js` にリンクを1行足す
 4. 手で確かめ、テストを足し、PR を出す（「PR を書いて」）
