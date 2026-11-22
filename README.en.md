@@ -7,9 +7,11 @@ It contains a list, detail, and add screen for a generic "item" with no fixed th
 
 There are no dependency packages. It runs on Node.js 24 or later only.
 
+The handbook for Learning Phase #4 is [HANDSON.en.md](HANDSON.en.md) (Japanese: [HANDSON.md](HANDSON.md)). If you arrive late, start from "[If you arrive late, start here](HANDSON.en.md#if-you-arrive-late-start-here)" in the handbook.
+
 ## Working in English
 
-- `CLAUDE.md` is in Japanese. If your team works in English, replace its contents with `CLAUDE.en.md` (for example, ask Claude: "Replace CLAUDE.md with the contents of CLAUDE.en.md and delete CLAUDE.en.md"). Claude Code reads only `CLAUDE.md` automatically.
+- `CLAUDE.md` is in Japanese. If your team works in English, replace its contents with `CLAUDE.en.md` (for example, tell Claude: "Replace the contents of CLAUDE.md with the contents of CLAUDE.en.md, and delete CLAUDE.en.md."). Claude Code reads only `CLAUDE.md` automatically.
 - The "write a PR" skill (`.claude/skills/write-pr/`) works in English too. Ask "Write a PR" and it writes the PR in the language of your `CLAUDE.md`.
 - Code comments and screen text are in Japanese. Ask Claude to explain or translate them when you need to; you will replace the screen text with your own theme anyway.
 
@@ -62,7 +64,7 @@ Notes:
 | `public/style.css` | Look and feel | Anyone |
 | `test/` | Tests run by `node --test` | The owner of the feature |
 | `server.js` | The entry point that loads `features/`. You normally don't touch it | |
-| `CLAUDE.md` / `CLAUDE.en.md` | The team's rules for Claude (Japanese / English). Fill in the blanks as a team | Everyone (through PRs) |
+| `CLAUDE.md` | The team's rules for Claude (in Japanese). Fill in the blanks as a team. Teams working in English replace its contents with `CLAUDE.en.md` (Claude Code reads only `CLAUDE.md` automatically) | Everyone (through PRs) |
 | `.claude/settings.json` | What Claude Code is not allowed to do (read `.env`, push to main, and so on) | |
 | `.claude/skills/write-pr/` | How Claude writes a PR when you ask "Write a PR" | |
 
@@ -86,23 +88,13 @@ If you can't decide, pick one of these and adapt it. Each one starts by simply r
 
 ## Getting ready for team development at the camp (optional)
 
-If you bring the way of working you practiced in Learning Phase #4 into your team's camp repository, it is easier to start at the camp. You do not create that repository during the #4 session. Whether and when to do this is up to your team. Teams that have already started development do not need it.
+If you bring the way of working you practiced in Learning Phase #4 (the development rules in CLAUDE.md, `.claude/settings.json`, the skill for writing PRs, and so on) into your team's camp repository, it is easier to start at the camp. You do not create it during the #4 lecture. Whether and when to do this is up to your team. Teams that have already started development do not need it.
 
-If you do it, have Claude copy only the parts of this practice repository that do not depend on your theme or technology.
-
-| What | How |
-|---|---|
-| The "Development rules" part of `CLAUDE.md` (or `CLAUDE.en.md`) | Copy as is. Keep only the headings of the "What this app is" part and leave them blank (fill them in after the whole team decides what to build on 12/12) |
-| `.claude/settings.json` | Copy as is. Change the two `data.db` lines to the data file you will use at the camp (delete them if there is none) |
-| `.claude/skills/write-pr/` | Copy as is |
-| The `.env` lines of `.gitignore` | Copy only the lines that keep `.env` out of commits (add lines for your technology once you choose it) |
-| Team agreements in the README | Only what your team decided, such as who reviews and when something may go into main |
-
-Do not copy the code (`features/`, `lib/`, `server.js`, and so on), `package.json`, `.env.example`, or `data.db`. You choose your tech stack after 12/12.
+What to copy and how is in "[Getting ready for team development at the camp](HANDSON.en.md#9-getting-ready-for-team-development-at-the-camp)" in the handbook. People who did not attend #4 can do it by reading only that section.
 
 ## How to add a feature
 
-1. Create a branch (for example, ask Claude: "Create a branch called `add-deadline`")
+1. Create a branch (for example, tell Claude: "Create a branch called `add-deadline` from the latest main")
 2. Create a new file in `features/` that exports `routes` (see `features/item-detail.js`)
 3. Add one link to `shared/nav.js`
 4. Check it by hand, add a test, and open a PR ("Write a PR")
