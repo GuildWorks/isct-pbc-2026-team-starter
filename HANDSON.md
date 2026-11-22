@@ -476,7 +476,7 @@ GEMINI_MODEL=gemini-3.5-flash-lite
 
 ### 3.5 Claude のブラウザ操作で確かめる
 
-先に、自分のターミナルのサーバーを Ctrl+C で止めます（Claude が同じ 3000 番で起動するため）。
+先に、自分のターミナルのサーバーを Ctrl+C で止めます（Claude が同じ 3000 番ポートで起動するため）。
 
 ```
 サーバーを起動して、ブラウザで検索を確かめてください。確かめる観点は、下に書いたものと、CLAUDE.md の「変更のたびに人がブラウザで見ること」です。観点ごとに、操作したことと見えたことを、スクリーンショット付きで報告してください。コードは直さないでください。
@@ -570,7 +570,7 @@ cd ~
 gh repo clone （代表のユーザー名）/lp4-team
 ```
 
-コード画面で `lp4-team` フォルダを開き、権限モード（Auto）とモデル（Sonnet 5.5）を見直します。`lp4-practice` のサーバーが動いていたら、Ctrl+C で止めておきます（同じ 3000 番を使うため）。
+コード画面で `lp4-team` フォルダを開き、権限モード（Auto）とモデル（Sonnet 5.5）を見直します。`lp4-practice` のサーバーが動いていたら、Ctrl+C で止めておきます（同じ 3000 番ポートを使うため）。
 
 ### 4.3 ブランチを切って、小さな変更を入れる
 
@@ -832,7 +832,7 @@ Claude の使用量が上限に達したら、Claude なしで進めます。Git
 | `ExperimentalWarning: SQLite is an experimental feature` と出る | 問題ありません。Node.js に入っている SQLite がまだ実験的な機能だという警告です |
 | `.env not found. Continuing without it.` と出る | 問題ありません。`.env` がまだ無いだけで、AI 機能はモックで動きます |
 | 起動すると `node:sqlite` や `--env-file-if-exists` のエラーで止まる | Node.js が古い。`node -v` が v24 以上か確かめ、https://nodejs.org/ から LTS を入れ直してターミナルを開き直す |
-| `EADDRINUSE`（3000 番が使われている）と出る | ほかのターミナルや Claude が、もうサーバーを動かしている。そちらを Ctrl+C で止めるか、Claude に「3000 番で動いているサーバーを止めて」と頼む |
+| `EADDRINUSE`（3000 番ポートが使われている）と出る | ほかのターミナルや Claude が、もうサーバーを動かしている。そちらを Ctrl+C で止めるか、Claude に「3000 番ポートで動いているサーバーを止めて」と頼む |
 | Claude が直したのに画面が変わらない | サーバーを Ctrl+C で止めて `npm start` で起動し直す。ブラウザも再読み込みする |
 | 列を足したら `no such column` で落ちる | 手元の `data.db` が古い形のまま。自分で `rm data.db` してから起動し直す（Claude には消させない） |
 
