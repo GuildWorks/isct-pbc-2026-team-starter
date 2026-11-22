@@ -590,7 +590,11 @@ add-（自分の名前） というブランチを切って、shared/nav.js の�
 
 `npm start` で起動し、ナビに自分の名前が出ることを自分の目で確かめます。
 
-英語で進めるチームは、誰か1人がナビの代わりに「CLAUDE.md を英語に替える」変更を入れます（[1.1 の ⑤](#11-スターターを動かす) の頼み方）。
+英語で進めるチームは、誰か1人がナビの代わりに、CLAUDE.md を英語に替える変更を入れます。
+
+```
+Create a branch called use-english-claude-md. Replace the contents of CLAUDE.md with the contents of CLAUDE.en.md, delete CLAUDE.en.md, and commit.
+```
 
 ### 4.4 PR を書く
 
