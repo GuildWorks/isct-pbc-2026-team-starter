@@ -105,7 +105,7 @@ It is a note at the top of the folder that Claude reads first every time. It say
 
 ## 1. Setup
 
-10:20-10:50. Run the starter on your machine (1.1), and get ready to open PRs on GitHub (1.2). Go through it from the top in order.
+Run the starter on your machine (1.1), and get ready to open PRs on GitHub (1.2). Go through it from the top in order.
 
 ### 1.1 Run the starter
 
@@ -267,19 +267,13 @@ If you get stuck, talk to the instructor or a mentor right away. If all you can 
 
 ## 2. Adding an AI feature
 
-10:50-12:00, on your own. You add one feature that calls the API of Gemini (Google's LLM) from the app's server.
+You work on your own. You add one feature that calls the API of Gemini (Google's LLM) from the app's server.
 
-| Time | Format | What to do |
-| --- | --- | --- |
-| 10:50-11:10 (20 min) | Lecture | How an app calls an LLM, handling keys, cost and limits, privacy, prompt injection, user experience (how to show waiting and failures) |
-| 11:10-11:15 (5 min) | Hands-on | [2.1 Design it](#21-design-it-do-not-build-yet) |
-| 11:15-11:20 (5 min) | Hands-on | [2.2 Build it](#22-build-it) |
-| 11:20-11:25 (5 min) | Hands-on | [2.3 Check it by hand with the mock](#23-check-it-by-hand-with-the-mock) |
-| 11:25-11:35 (10 min) | Hands-on | [2.4 Get a key](#24-get-a-key) |
-| 11:35-11:40 (5 min) | Hands-on | [2.5 Put the key in .env yourself](#25-put-the-key-in-env-yourself) |
-| 11:40-11:50 (10 min) | Hands-on | [2.6 Call the real Gemini and check](#26-call-the-real-gemini-and-check), [2.7 Try prompt injection](#27-try-prompt-injection) |
-| 11:50-11:55 (5 min) | Hands-on | [2.8 Commit](#28-commit) |
-| 11:55-12:00 (5 min) | Look back | Bridge to the afternoon's advanced part |
+| Format | What to do |
+| --- | --- |
+| Lecture | How an app calls an LLM, handling keys, cost and limits, privacy, prompt injection, user experience (how to show waiting and failures) |
+| Hands-on | [2.1 Design it](#21-design-it-do-not-build-yet) → [2.2 Build it](#22-build-it) → [2.3 Check it by hand with the mock](#23-check-it-by-hand-with-the-mock) → [2.4 Get a key](#24-get-a-key) → [2.5 Put the key in .env yourself](#25-put-the-key-in-env-yourself) → [2.6 Call the real Gemini and check](#26-call-the-real-gemini-and-check) → [2.7 Try prompt injection](#27-try-prompt-injection) → [2.8 Commit](#28-commit) |
+| Look back | Bridge to the afternoon's advanced part |
 
 ### Lecture points
 
@@ -412,7 +406,7 @@ The morning and advanced practice go only as far as local commits; you do not pu
 
 ## 3. Advanced (maps and rails)
 
-13:00-14:15. Lecture 20 min + hands-on 55 min.
+After the lecture, you build "search" on your own and check it (the instructor shows the automated test in 3.7).
 
 ### Lecture points
 
@@ -540,11 +534,11 @@ Commit the changes so far with the message "Make items searchable".
 
 ## 4. Team development
 
-14:15-15:15. Joining up 5 min + lecture 15 min + hands-on 40 min.
+You decide the teams, and after the lecture, the team goes once around branch → PR → review → merge.
 
 **Decide the teams**
 
-In the first 5 minutes (14:15-14:20), decide the teams.
+First, decide the teams.
 
 - If even one member of your team is here, go with that team
 - If none are here, raise your hand; those people form merged teams of 2-3. People working in English form teams with others working in English
@@ -668,15 +662,13 @@ Teams of three or more fix and merge the remaining PRs the same way. If you do n
 
 ## 5. Exercise "Develop as a team"
 
-15:30-17:45 (135 min). In the team repository you made in 4, the team chooses a theme, and each person adds one feature through a PR.
+In the team repository you made in 4, the team chooses a theme, and each person adds one feature through a PR. Go in this order.
 
-| Time | What to do |
-| --- | --- |
-| 15:30-15:50 (20 min) | [5.1 Theme and plan](#51-theme-and-plan) |
-| 15:50-16:05 (15 min) | [5.2 Replace the starter's "item" with your theme](#52-replace-the-starters-item-with-your-theme) |
-| 16:05-16:55 (50 min) | [5.3 Develop as a team](#53-develop-as-a-team). At 16:30, "Is the first PR open?" |
-| 16:55-17:30 (35 min) | [5.4 Merge everyone's PRs and wrap up](#54-merge-everyones-prs-and-wrap-up). At 17:15, "Does main work?" |
-| 17:30-17:45 (15 min) | [5.5 Prepare the presentation](#55-prepare-the-presentation) |
+1. [5.1 Theme and plan](#51-theme-and-plan)
+2. [5.2 Replace the starter's "item" with your theme](#52-replace-the-starters-item-with-your-theme) (one person, in one PR)
+3. [5.3 Develop as a team](#53-develop-as-a-team) (partway through, check as a team "Is the first PR open?")
+4. [5.4 Merge everyone's PRs and wrap up](#54-merge-everyones-prs-and-wrap-up) (before preparing the presentation, check "Does main work?")
+5. [5.5 Prepare the presentation](#55-prepare-the-presentation)
 
 ### 5.1 Theme and plan
 
@@ -771,7 +763,7 @@ The person in charge of the AI feature builds it with the mock first and checks 
 
 If you want to add a column along the way, tell the team before you add it. After the PR that adds the column is merged, the others tell Claude "Bring the latest main on GitHub into this branch" on the branch they are working on, stop the server with Ctrl+C, delete `data.db` themselves, and start again (this is practice, so it is fine to lose the data).
 
-Around 16:30, check as a team whether the first PR is open.
+Partway through building, check as a team whether the first PR is open.
 
 ### 5.4 Merge everyone's PRs and wrap up
 
@@ -779,7 +771,7 @@ Review and merge the PRs (the same instructions as 4.5-4.8).
 
 - Merge one at a time. After each merge, everyone says "Switch to main and bring it up to date."
 - If there is a conflict, the person who opened the PR fixes it (the instruction in 4.8)
-- At 17:15, check "Does main work?" Everyone tells Claude "Switch to main and bring it up to date," starts the app, and checks that everyone's features work
+- Before you start preparing the presentation, check "Does main work?" Everyone tells Claude "Switch to main and bring it up to date," starts the app, and checks that everyone's features work
 
 If you reach Claude's usage limit, continue without Claude. You can review and merge on GitHub's PR page. Small conflicts like the one in the navigation can be fixed from **Resolve conflicts** on the PR page (that itself is practice for the camp).
 
@@ -792,7 +784,7 @@ If you reach Claude's usage limit, continue without Claude. You can review and m
 
 ## 6. Presentations
 
-17:45-18:40. 4 minutes per team + 30 seconds to switch.
+Each team has 4 minutes (plus 30 seconds to switch).
 
 - Join the Zoom that the instructor shares on Slack, and share your screen from your seat
 - What to talk about: what you built, how you split the work, how you instructed Claude, where you got stuck and how you got through. At the end, one "what went well in the way we worked" and one "what was hard"
