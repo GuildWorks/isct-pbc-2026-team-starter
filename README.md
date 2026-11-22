@@ -88,7 +88,7 @@ node --test
 
 ## 機能の足し方
 
-1. ブランチを切る（例: 「`add-deadline` というブランチを切って」と Claude に指示する）
+1. ブランチを切る（例: 「最新の main から `add-deadline` というブランチを切って」と Claude に指示する）
 2. `features/` に新しいファイルを作り、`routes` を書き出す（`features/item-detail.js` が参考になる）
 3. `shared/nav.js` にリンクを1行足す
 4. 手で確かめ、テストを足し、PR を出す（「PR を書いて」）
