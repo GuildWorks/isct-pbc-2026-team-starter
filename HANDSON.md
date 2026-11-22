@@ -892,7 +892,7 @@ Claude の使用量が上限に達したら、Claude なしで進めます。Git
 
 ### gh をどうしても入れられないとき
 
-インストーラが会社や学校の設定で止められた、などで gh を入れられないときは、2回目と同じく GitHub の画面で進めます。
+エラーなどで gh を入れられないときは、2回目と同じく GitHub の画面で進めます。
 
 - **自分のリポジトリ（1.2 の ④）**: ブラウザで https://github.com/new を開き、Repository name を `lp4-practice`、**Private** で作る。表示される `git remote add origin …` と `git push -u origin main` の2行を Claude に渡し、「いまの origin は starter という名前に変えてから、この2行で push して」と指示する
 - **push のときにログインを求められたら**: GitHub のパスワードではなく、ブラウザでのログインか、Personal Access Token（GitHub → Settings → Developer settings → Personal access tokens で作る。`repo` の権限）を使う。Windows では、Git for Windows に入っている仕組みでブラウザのログイン画面が出ることがあります
