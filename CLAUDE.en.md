@@ -40,8 +40,8 @@ When you change this file, have the team review it in a PR.
 ## How to check this app
 
 - Command to run the tests: `node --test` (same as `npm test`). Tests live under `test/`.
-- What a person checks in the browser (team writes this):
-  <!-- After a change, what a person operates and looks at in the browser with their own hands. Example: pressing Add with an empty name does not add an item and shows a warning -->
+- What a person checks in the browser after every change (team writes this):
+  <!-- Checks a person does by hand in the browser after any change, whatever feature it touches. Feature-specific checks go in the PR's "How I checked", not here. Example: the list, detail and add screens still open as before -->
 
 ---
 
