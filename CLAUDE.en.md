@@ -63,6 +63,7 @@ When you change this file, have the team review it in a PR.
 ## How we check
 
 - A person decides what to check, and checks it by operating the app with their own hands. Do not stop at Claude saying "done".
+- "What a person checks in the browser after every change" is the minimum. Checks that fit the feature you changed are worked out by a person each time.
 - After a change, run the tests before opening a PR (the command is under "How to check this app").
 - Turn what you want to check every time into a test. Tests are there to notice when someone's change breaks another person's feature.
 - Tests never call real APIs (external AI and so on). Use mocks or a replaced network call in tests.
