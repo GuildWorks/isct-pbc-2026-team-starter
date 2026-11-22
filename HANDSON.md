@@ -625,7 +625,7 @@ Claude の指摘を読んで、自分でも差分を見て、気になること�
 
 ### 4.6 マージする
 
-1つ目の PR から順に、PR を出した本人が GitHub の画面で **Merge pull request** → **Confirm merge** を押します。マージのボタンは Claude ではなく人が押します。
+まず1つ目の PR を、出した本人が GitHub の画面で **Merge pull request** → **Confirm merge** を押してマージします。残りの PR は、4.8 で見てからマージします。マージのボタンは Claude ではなく人が押します。
 
 ### 4.7 main を最新にする
 
@@ -637,7 +637,7 @@ main を最新にしてください。
 
 ### 4.8 コンフリクトを直す
 
-2つ目の PR を開くと、「This branch has conflicts that must be resolved」と出ます。同じナビの同じ場所に、2人が1行ずつ足したためです。出ていなければ、そのままマージしてかまいません。
+1つ目の PR がマージされたあとで、残りの PR を開くと、「This branch has conflicts that must be resolved」と出ます。同じナビの同じ場所に、2人が1行ずつ足したためです。出ていなければ、そのままマージしてかまいません。
 
 チーム全員で、その PR を出した人の画面を見ながら直します。
 
