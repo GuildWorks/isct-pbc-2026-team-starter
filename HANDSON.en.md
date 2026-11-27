@@ -454,7 +454,7 @@ Restart the server and check the search by operating the browser yourself. Try e
 
 Write down, as concrete bullet points, what you operated and what you saw in 3.3 (for example: searching for `見本` (sample) showed the three sample items; searching for `<b>bold</b>` showed it as plain text, not in bold). It is a person who decides what to check.
 
-Some of these are worth checking after any change, not only for search (for example: tags you entered are shown as plain text, not as bold and so on). If you write such points in CLAUDE.md, the team can check them the same way whoever changes whatever (both when you check by hand and when you have Claude check in the browser as in 3.5). The points in CLAUDE.md are the minimum to look at every time. Checks that fit the feature you changed are worked out by yourself each time and added, as in 3.3.
+Some of these are worth checking after any change, not only for search (for example: where values entered by a user are displayed, symbols and HTML tags (such as `<b>`) are shown as plain text). If you write such points in CLAUDE.md, the team can check them the same way whoever changes whatever (both when you check by hand and when you have Claude check in the browser as in 3.5). The points in CLAUDE.md are the minimum to look at every time. Checks that fit the feature you changed are worked out by yourself each time and added, as in 3.3.
 
 On the other hand, CLAUDE.md is loaded every time, so if you write search-only checks in it, they remain as instructions even for changes unrelated to search. So tell Claude to pick out the points from what you wrote down and write them in CLAUDE.md.
 
