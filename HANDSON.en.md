@@ -183,7 +183,7 @@ In the afternoon team development, you push to GitHub and open PRs. To prepare, 
 
 **① Install gh (GitHub CLI)**
 
-gh is a tool for working with GitHub from the terminal. To push to GitHub, you need to be logged in to GitHub. Once you log in with gh, later pushes go through without logging in again. Claude also uses gh when it creates a PR.
+gh is a tool for working with GitHub from the terminal. To push to GitHub from this PC, you need to log in once. Logging in with gh lets both your pushes and Claude's PR creation go through. Even if you can already push, you still need to log in with gh so that PRs can be created.
 
 Open https://github.com/cli/cli/releases/latest, and from Assets at the bottom of the page, choose the installer for your OS and install it.
 
